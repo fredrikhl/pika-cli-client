@@ -1,0 +1,12 @@
+conn:
+  host: localhost
+  port: 5672
+  vhost: /
+
+ssl:
+  enable: false
+  version: tlsv1.1
+  ciphers: []
+
+logging:
+  level: DEBUG
