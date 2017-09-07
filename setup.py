@@ -38,6 +38,12 @@ def setup_package():
         install_requires=list(get_requirements('requirements.txt')),
         packages=get_packages(),
         # TODO: Add entry points?
+        entry_points={
+            'console_scripts': [
+                'pika-cli-publish = pika_cli_client.publisher:main',
+                'pika-cli-consume = pika_cli_client.consumer:main',
+            ]
+        },
     )
 
 
